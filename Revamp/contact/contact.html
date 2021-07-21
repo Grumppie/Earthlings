@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins" rel="stylesheet" />
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://kit.fontawesome.com/f5eb717282.js" crossorigin="anonymous"></script>
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <main>
+        <div class="navbar">
+            <!-- logo -->
+            <div class="logo-container">
+                <a href="../index/index.html"><img class="logo" src="../assets/Logo/Logo.png" alt="Logo"></a>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li class="links"><a href="#">news</a></li>
+                    <li class="links"><a href="../aboutus/index.html">about </a></li>
+                    <li class="links"><a href="../contact/contact.html">contact </a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-container"><button class="cta">Sign in</button>
+            </div>
+
+        </div>
+        <div class="glass">
+            <div class="contact-title">
+                <h2>Contact us</h2>
+
+            </div>
+            <form id="form" name="myForm" method="GET">
+                <div class="container " id="name-container">
+                    <i class="small-logo fa fa-user"></i>
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                    <i class="tick fas fa-check-circle"></i>
+                    <i class="cross fas fa-exclamation-circle"></i>
+                    <small id="name-error" class="error-message"></small>
+                </div>
+
+                <div class="container" id="phone-number-container">
+                    <i class="small-logo fa fa-phone"></i>
+                    <input type="number" name="phone-number" id="phone-number" placeholder="Your Phone number">
+                    <i class="tick fas fa-check-circle"></i>
+                    <i class="cross fas fa-exclamation-circle"></i>
+                    <small id="number-error" class="error-message"></small>
+                </div>
+
+                <div class="container" id="email-container">
+                    <i class="small-logo fa fa-envelope"></i>
+                    <input type="email" name="emil" id="email" placeholder="Your Email">
+                    <i class="tick fas fa-check-circle"></i>
+                    <i class="cross fas fa-exclamation-circle"></i>
+                    <small id="email-error" class="error-message"></small>
+
+                </div>
+
+                <div class="container" id="message">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+                </div>
+                <div class="btn-container">
+                    <button class="btn" type="submit"><i class="fa fa-paper-plane"></i>Send</button>
+                </div>
+            </form>
+
+
+        </div>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+</body>
+<script src="contact-script.js"></script>
+
+</html>

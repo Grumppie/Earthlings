@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+
+}
+
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(134, 219, 179);
+
+    
+
+
+}
+
+.logo-container{
+
+    display: flex;
+    flex-basis: 5%;
+    align-items: center;
+    // border: 2px solid red;
+
+}
+
+li , a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.logo-a{
+    width: 500px;
+    
+}
+
+
+
+    
+
+.logo{
+    padding-top: 10px;
+    height: 120%;
+    width: 120%;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 2px solid blue;
+    
+    
+    li{
+        display: inline-block;
+        padding: 0 15px;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+   
+    
+    
+}
+
+a:hover{
+    color: rgb(158, 249, 255);
+}
+
+
+// .btn-container{
+//     // border: 2px solid rgb(0, 255, 85);
+
+// }
+
+.btn-container{
+    padding: 0 10px;
+    margin:0;
+    flex-basis: 5%;
+}
+
+.cta{
+    height: 50px;
+    width: 100px;
+    border-radius: 2rem;
+    font-size: 15px;
+    background-color: rgb(41, 189, 157);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cta:hover{
+    background-color: rgb(158, 249, 255);
+    color: rgb(0, 0, 0);
+
+}
+
+/* Hero */
+
+.hero{
+    height: 90vh;
+    width: 100%;
+    opacity: 0.8;
+    background-size: cover;
+    
+}
+body{
+    background: #000;
+}
+
+#bar{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-35%,-45%);
+    width: 40%;
+    z-index: 5;
+    border-radius: 2rem;
+    
+
+}
+
+.gsc-input {
+    font-size: 24px;
+}
+
+.text-logo img{
+    
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    transform: translate(-35%,-45%);
+    z-index: 6;
+    height: 70px;
+}
+
+.gsc-control-cse .gs-spelling, .gsc-control-cse .gs-result .gs-title, .gsc-control-cse .gs-result .gs-title * {
+    font-size: 24px;}

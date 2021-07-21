@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(134, 219, 179);
+    width: 100%;
+    position: absolute;
+    top: 0%;
+
+}
+
+.logo-container{
+
+    display: flex;
+    flex-basis: 5%;
+    align-items: center;
+    // border: 2px solid red;
+
+}
+
+li , a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.logo-a{
+    width: 500px;
+    
+}
+
+
+
+    
+
+.logo{
+    padding-top: 10px;
+    height: 120%;
+    width: 120%;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 2px solid blue;
+    
+    
+    li{
+        display: inline-block;
+        padding: 0 15px;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+   
+    
+    
+}
+
+a:hover{
+    color: rgb(158, 249, 255);
+}
+
+
+
+// .btn-container{
+//     // border: 2px solid rgb(0, 255, 85);
+
+// }
+
+.btn-container{
+    padding: 0 10px;
+    margin:0;
+    flex-basis: 5%;
+}
+
+.cta{
+    height: 50px;
+    width: 100px;
+    border-radius: 2rem;
+    font-size: 15px;
+    background-color: rgb(41, 189, 157);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.cta:hover{
+    background-color: rgb(158, 249, 255);
+    color: rgb(0, 0, 0);
+
+}
+
+main{
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top , #65dfc9, #6cdbeb);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass{
+    background: white;
+    min-height: 80vh;
+    width: 50%;
+    background: linear-gradient(
+        to bottom right ,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.circle1 , .circle2{
+    background: white;
+    background: linear-gradient(
+        to bottom right ,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.1)
+    );
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1{
+    top: 67%;
+    left: 14%;
+}
+.circle2{
+    top: 10%;
+    left: 70%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-title{
+    color: #6cdbeb;
+    font-size: 40px;
+    padding: 1rem;
+    margin: 1rem;
+    border-bottom: 5px solid #7bc5cf;
+    border-radius: 10px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    
+
+    .small-logo{
+        position: absolute;
+        left: 5rem;
+        
+    }
+    
+}
+
+
+
+.container input , .container textarea{
+    background: none;
+    width: 75%;
+    // text-align: center;
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid #7bc5cf;
+}
+.container textarea{
+    border: 2px solid #7bc5cf;
+    padding: 1px;
+    font-family: "Poppins", sans-serif;
+   height: 100%;
+   width: 83%;
+   resize: none;
+    
+}
+
+
+.btn-container{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i{
+        margin: 5px;
+    }
+   
+}
+
+
+.btn{
+    cursor: pointer;
+    outline: none;
+    width: 25%;
+    font-size: 20px;
+    margin: 2rem;
+    padding: 15px;
+    width: 10rem;
+    border-radius: 2rem;
+    background-color: rgb(183, 252, 237);
+    border: none;
+    
+}
+
+.btn:hover{
+    background-color: #6cdbeb;
+    color: rgb(255, 255, 255);
+
+}
+
+#phone-number-container{
+    .small-logo{
+        transform: scale(-1, 1);
+    }
+}
+
+.tick{
+    position: absolute;
+    color: #2ecc71;
+    left: 755px;
+    z-index: 5;
+    visibility: hidden;
+}
+.cross{
+    position: absolute;
+    color: #e74c3c;
+    left: 755px;
+    z-index: 5;
+    visibility: hidden;
+}
+
+.container.success {
+    input { 
+	border:2px solid #2ecc71;
+    }
+    .tick{
+        visibility: visible;
+    }
+}
+
+.container.error {
+    input {
+	border-color: #e74c3c;
+    }
+    .cross{
+        visibility: visible;
+    }
+   
+}
+.error-message{
+    color: rgb(255, 124, 124);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+    
+    small{
+        position: absolute;
+        left: 23.4rem;
+        visibility: hidden;
+
+    }
+
+
+.container.error {
+    small{
+    visibility: visible;
+}
+}

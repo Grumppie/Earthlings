@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #86dbb3;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+}
+
+.logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 5%;
+      flex-basis: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+li, a {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+.logo-a {
+  width: 500px;
+}
+
+.logo {
+  padding-top: 10px;
+  height: 120%;
+  width: 120%;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+a:hover {
+  color: #9ef9ff;
+}
+
+.btn-container {
+  padding: 0 10px;
+  margin: 0;
+  -ms-flex-preferred-size: 5%;
+      flex-basis: 5%;
+}
+
+.cta {
+  height: 50px;
+  width: 100px;
+  border-radius: 2rem;
+  font-size: 15px;
+  background-color: #29bd9d;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background-color: #9ef9ff;
+  color: black;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left bottom, right top, from(#65dfc9), to(#6cdbeb));
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 50%;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.3)));
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.circle1, .circle2 {
+  background: white;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.1)));
+  background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 67%;
+  left: 14%;
+}
+
+.circle2 {
+  top: 10%;
+  left: 70%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.contact-title {
+  color: #6cdbeb;
+  font-size: 40px;
+  padding: 1rem;
+  margin: 1rem;
+  border-bottom: 5px solid #7bc5cf;
+  border-radius: 10px;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+}
+
+.container .small-logo {
+  position: absolute;
+  left: 5rem;
+}
+
+.container input, .container textarea {
+  background: none;
+  width: 75%;
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid #7bc5cf;
+}
+
+.container textarea {
+  border: 2px solid #7bc5cf;
+  padding: 1px;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 83%;
+  resize: none;
+}
+
+.btn-container {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-container i {
+  margin: 5px;
+}
+
+.btn {
+  cursor: pointer;
+  outline: none;
+  width: 25%;
+  font-size: 20px;
+  margin: 2rem;
+  padding: 15px;
+  width: 10rem;
+  border-radius: 2rem;
+  background-color: #b7fced;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #6cdbeb;
+  color: white;
+}
+
+#phone-number-container .small-logo {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.tick {
+  position: absolute;
+  color: #2ecc71;
+  left: 755px;
+  z-index: 5;
+  visibility: hidden;
+}
+
+.cross {
+  position: absolute;
+  color: #e74c3c;
+  left: 755px;
+  z-index: 5;
+  visibility: hidden;
+}
+
+.container.success input {
+  border: 2px solid #2ecc71;
+}
+
+.container.success .tick {
+  visibility: visible;
+}
+
+.container.error input {
+  border-color: #e74c3c;
+}
+
+.container.error .cross {
+  visibility: visible;
+}
+
+.error-message {
+  color: #ff7c7c;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+small {
+  position: absolute;
+  left: 23.4rem;
+  visibility: hidden;
+}
+
+.container.error small {
+  visibility: visible;
+}
+/*# sourceMappingURL=contact.css.map */
